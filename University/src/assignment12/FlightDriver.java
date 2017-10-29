@@ -1,3 +1,4 @@
+package assignment12;
 
 public class FlightDriver {
     public static void main(String[] args) {
@@ -15,15 +16,16 @@ public class FlightDriver {
         System.out.println("The arrival time of the first Flight object is: " + firstFlight.getArrivalTime());
         secondFlight.setOrigin(new String("Tel-Aviv"));
         secondFlight.setDestination(new String("Rome"));
-        secondFlight.setDeparture(new Time1(10,40));
+        secondFlight.setDeparture(new Time1(1,25));
         secondFlight.setFlightDuration(300);
-        secondFlight.setNoOfPassengers(300);
+        secondFlight.setNoOfPassengers(100);
         secondFlight.setPrice(750);
         System.out.println("Are the first and second Flight objects equal? " + firstFlight.equals(secondFlight));
-        System.out.println ("Were 200 passengers added successfully to the first flight? "+firstFlight.addPassengers(200));
+        System.out.println ("Were 30 passengers added successfully to the first flight? "+firstFlight.addPassengers(30));
         System.out.println ("The total price of the first flight is: "+firstFlight.totalPrice());
         System.out.println ("Does the first flight land before the second flight? "+firstFlight.landsEarlier(secondFlight));
         System.out.println("The string representation of the first Flight object is: " + firstFlight.toString());
         System.out.println("The string representation of the second Flight object is: " + secondFlight.toString());
+        System.out.println(secondFlight.getArrivalTime());
     }
 }

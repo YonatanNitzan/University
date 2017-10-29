@@ -5,8 +5,19 @@ public class Time1 {
 	private int _hour, _minute;
 
 	public Time1(int h, int m) {
-		_hour = h;
-		_minute = m;
+		if (h > 23)
+			_hour = 23;
+		else if(h < 0)
+			_hour = 0;
+		else
+			_hour = h;
+		
+		if (m > 59)
+			_minute = 59;
+		else if(m < 0)
+			_minute = 0;
+		else
+			_minute = m;
 	}
 
 	public Time1(Time1 t) {
