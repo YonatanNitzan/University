@@ -25,7 +25,7 @@ public class Time2Driver {
 
         System.out.println("Is the first time after the second time? " + firstTime.after(secondTime));
 
-        System.out.println("The difference in seconds between the first and second time is: " + firstTime.difference(secondTime));
+        System.out.println("The difference in minutes between the first and second time is: " + firstTime.difference(secondTime));
 
         System.out.println("The string representation of the first time is: " + firstTime.toString());
     }
