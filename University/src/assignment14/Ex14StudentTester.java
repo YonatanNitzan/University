@@ -32,16 +32,24 @@ public class Ex14StudentTester
         // Testing Q3 - isWay
         System.out.println("\nTesting Question 3\n==================");
         int[] a1 = {2,4,1,6,4,2,4,3,5};
-        System.out.println("a = {2,4,1,6,4,2,4,3,5}");
+        for (int i = 0; i < a1.length; i++)
+        	System.out.print(a1[i] + ", ");
+        System.out.println();
         System.out.println("Ex14.isWay(a) is: " + Ex14.isWay(a1));
 
-        /*
         // Testing Q4 - printPath
         System.out.println("\nTesting Question 4\n==================");
         int [][] mat = {{3,8,7,1},{5,15,2,4},{2,1,3,2},{4,6,7,52}};
-        System.out.println("mat={\t{3,8,7,1}\n\t{5,15,2,4}\n\t{2,1,3,2}\n\t{4,6,7,52}\n    }");
+        
+        System.out.println("Mat:");
+        for (int i = 0; i < mat.length; i++) {
+        	System.out.print("{");
+        	for (int j = 0; j < mat.length; j++)
+            	System.out.print(mat[i][j] + ", ");
+        	System.out.println("}");
+        }
+        
         System.out.println("Ex14.printPath(mat) output is:");
         Ex14.printPath(mat);
-        */
     }
 }
